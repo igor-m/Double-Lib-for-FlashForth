@@ -1,17 +1,17 @@
 ;
-; Double Precison POW(x,y)
+; Double Precison ATAN2(x,y)
 ;
 ; IgorM (c) 6.6.2015
 ;
 
 
 	.pword  paddr(9b)+PFLASH
-; Dpow
+; Datan2
 9:
-	.byte   NFA|4
-	.ascii  "Dpow"
+	.byte   NFA|6
+	.ascii  "Datan2"
 	.align  2
-DPOW_:
+DATAN2_:
 	push	W0
 	push	W1
 	push	W2
@@ -28,8 +28,8 @@ DPOW_:
 	mov     [W14--], W2
 	mov     [W14--], W1
 	mov     [W14], W0	
-	.extern _Dpow
-	call  _Dpow
+	.extern _Datan2
+	call  _Datan2
 	mov     W0, [W14++]
 	mov     W1, [W14++]
 	mov     W2, [W14++]

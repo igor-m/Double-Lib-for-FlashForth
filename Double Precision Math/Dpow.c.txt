@@ -1,4 +1,4 @@
-// Calling user's C function
+//
 // POW(x,y) - DOUBLE PRECISION CALCULATION
 //
 // IgorM (c) 6.6.2015

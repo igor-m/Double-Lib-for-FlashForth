@@ -1,17 +1,17 @@
 ;
-; Double Precison POW(x,y)
+; Double Precison EXP(x)
 ;
 ; IgorM (c) 6.6.2015
 ;
 
 
 	.pword  paddr(9b)+PFLASH
-; Dpow
+; Dexp
 9:
 	.byte   NFA|4
-	.ascii  "Dpow"
+	.ascii  "Dexp"
 	.align  2
-DPOW_:
+DEXP_:
 	push	W0
 	push	W1
 	push	W2
@@ -20,16 +20,16 @@ DPOW_:
 	push	W5
 	push	W6
 	push 	W7
-	mov     [W14--], W7
-	mov     [W14--], W6
-	mov     [W14--], W5
-	mov     [W14--], W4
+	;mov     [W14--], W7
+	;mov     [W14--], W6
+	;mov     [W14--], W5
+	;mov     [W14--], W4
 	mov     [W14--], W3
 	mov     [W14--], W2
 	mov     [W14--], W1
 	mov     [W14], W0	
-	.extern _Dpow
-	call  _Dpow
+	.extern _Dexp
+	call  _Dexp
 	mov     W0, [W14++]
 	mov     W1, [W14++]
 	mov     W2, [W14++]
