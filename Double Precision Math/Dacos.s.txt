@@ -9,7 +9,7 @@
 ; Dacos
 9:
 	.byte   NFA|5
-	.ascii  "Dasin"
+	.ascii  "Dacos"
 	.align  2
 DACOS_:
 	push	W0

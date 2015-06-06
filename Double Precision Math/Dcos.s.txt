@@ -9,7 +9,7 @@
 ; Dcos
 9:
 	.byte   NFA|4
-	.ascii  "Dsin"
+	.ascii  "Dcos"
 	.align  2
 DCOS_:
 	push	W0
