@@ -7,6 +7,29 @@
 #include <stddef.h>
 #include <math.h>
 
+// 4 primitives
+
+double Dadd( double x, double y) {
+
+	return x + y;
+}
+
+double Dsub( double x, double y) {
+
+	return x - y;
+}
+
+double Dmul( double x, double y) {
+
+	return x * y;
+}
+
+double Ddiv( double x, double y) {
+
+	return x / y;
+}
+
+// Functions
 
 double Dacos( double x) {
 
